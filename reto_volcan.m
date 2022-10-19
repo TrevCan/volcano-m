@@ -150,7 +150,7 @@ end
 % 100 puntos dentro de length(step)
 % 
 
-frameCount = round(length(x(1,:))/500):length(x(1,:));
+frameCount = 1;
 
 for i=1:round(length(x(1,:))/500):length(x(1,:))
     
@@ -168,7 +168,8 @@ for i=1:round(length(x(1,:))/500):length(x(1,:))
     drawnow;
     hold off;
 
-    frames(i) = getframe(gcf);
+    frames(frameCount) = getframe(gcf);
+    frameCount = frameCount + 1;
 
 end
 
@@ -347,7 +348,8 @@ for i=1:round(length(o1x(1,:))/500):length(o1x(1,:))
     drawnow;
     hold off;
 
-    frames(i+frameCount) = getframe(gcf);
+    frames(frameCount) = getframe(gcf);
+    frameCount = frameCount + 1;
 
 end
 
