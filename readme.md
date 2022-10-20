@@ -1,6 +1,6 @@
 # Volcano Simulation on Matlab
 
-### demo
+### Demo
 
 ![Live Demo. Volcano with 3 lava rocks.](assets/reto_volcan_cumbias_sped_up.gif)
 
